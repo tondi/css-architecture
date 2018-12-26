@@ -1,0 +1,22 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+
+    list-style-type: none;
+}
+
+.menu--vertical {
+    max-width: 400px;
+    flex-direction: column;
+
+    list-style-type: circle;
+}
+
+.menu__item {
+    margin-right: 8px;
+
+    .menu--vertical & {
+        margin-right: 0;
+        color: goldenrod;
+    }
+}
